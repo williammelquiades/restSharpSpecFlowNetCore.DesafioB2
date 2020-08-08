@@ -21,6 +21,8 @@ namespace RestSharpNetCoreTemplate.Helpers
         public static ExtentTest TEST;
         private static ExtentTest feature;
         private static ExtentTest scenario;
+        //private static ExtentTest Funcionalidade;
+        //private static ExtentTest Cenario;
 
         static string reportName = JsonBuilder.ReturnParameterAppSettings("REPORT_NAME") + "_" + DateTime.Now.ToString("dd-MM-yyyy_HH-mm");
 

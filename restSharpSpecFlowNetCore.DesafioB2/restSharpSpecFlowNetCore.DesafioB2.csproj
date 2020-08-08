@@ -2,9 +2,17 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-
-    <IsPackable>false</IsPackable>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="appsettings.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="appsettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="ExtentReports.Core" Version="1.0.3" />
@@ -27,11 +35,14 @@
 
   <ItemGroup>
     <Folder Include="DBSteps\" />
-    <Folder Include="Features\" />
     <Folder Include="Queries\" />
+    <Folder Include="Requests\Config\" />
+    <Folder Include="Requests\Filters\" />
+    <Folder Include="Requests\Issues\" />
+    <Folder Include="Requests\Lang\" />
+    <Folder Include="Requests\Users\" />
+    <Folder Include="Requests\Pages\" />
     <Folder Include="Steps\" />
-    <Folder Include="StepDefinitions\" />
-    <Folder Include="Requests\" />
   </ItemGroup>
 
 </Project>
